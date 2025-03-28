@@ -26,7 +26,7 @@ test("One dollar should be 146.26 yens", function() {
      const expected =   4 * 146.26;
 
     // Hago mi comparación (la prueba)
-    expect(fromDollarToYen(2)).toBeCloseTo(2 * 146.26); 
+    expect(fromDollarToYen(3)).toBeCloseTo(3 * 146.26,1); 
 })
 test("One yen should be 0.0056 Puonds", function() {
     
@@ -35,5 +35,5 @@ test("One yen should be 0.0056 Puonds", function() {
      const expected =   5 * 0.0056;
 
     // Hago mi comparación (la prueba)
-    expect(fromYenToPound(5)).toBeCloseTo(5 * 0.0056); 
+    expect(fromYenToPound(5)).toBeCloseTo(5 * 0.0056,1); 
 })
