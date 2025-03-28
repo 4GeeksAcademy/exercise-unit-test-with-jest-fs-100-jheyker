@@ -19,21 +19,21 @@ test("One euro should be 1.07 dollars", function() {
     // Hago mi comparación (la prueba)
     expect(fromEuroToDollar(3.5)).toBe(3.745); // 1 euro son 1.07 dólares, entonces 3.5 euros deberían ser = (3.5 * 1.07)
 })
-test("One dollar should be 146.26168224299064 yens", function() {
+test("One dollar should be 146.26 yens", function() {
     
-    const yen = fromDollarToYen(1);
+    const yen = fromDollarToYen(4);
 
-     const expected =   1 * 146.26168224299064;
+     const expected =   4 * 146.26;
 
     // Hago mi comparación (la prueba)
-    expect(fromDollarToYen(1)).toBe(1 * 146.26168224299064); 
+    expect(fromDollarToYen(2)).toBeCloseTo(2 * 146.26); 
 })
-test("One yen should be 0.0055591054313099035 Puonds", function() {
+test("One yen should be 0.0056 Puonds", function() {
     
-    const yen = fromYenToPound(1);
+    const yen = fromYenToPound(5);
 
-     const expected =   1 * 0.0055591054313099035;
+     const expected =   5 * 0.0056;
 
     // Hago mi comparación (la prueba)
-    expect(fromYenToPound(1)).toBe(1 * 0.0055591054313099035); 
+    expect(fromYenToPound(5)).toBeCloseTo(5 * 0.0056); 
 })

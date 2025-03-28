@@ -19,14 +19,13 @@ const fromEuroToDollar = function(valueInEuro) {
 const fromDollarToYen = (valueInDollar) => {
     const valueInEuro = valueInDollar / oneEuroIs["USD"];
     const valueInYen = valueInEuro * oneEuroIs["JPY"];
-    return valueInYen;
+    return parseFloat(valueInYen.toFixed(2));
 }
 const fromYenToPound = (valueInYen) => {
     const valueInEuro = valueInYen / oneEuroIs["JPY"];
     const valueInPound = valueInEuro * oneEuroIs["GBP"];
-    return valueInPound;
+    return parseFloat(valueInPound.toFixed(4));
 }
-console.log(fromYenToPound(1));
 
 
 
