@@ -26,6 +26,9 @@ const fromYenToPound = (valueInYen) => {
     const valueInPound = valueInEuro * oneEuroIs["GBP"];
     return parseFloat(valueInPound.toFixed(4));
 }
+console.log(fromYenToPound(1));
+console.log(fromDollarToYen(1));
+
 
 
 
